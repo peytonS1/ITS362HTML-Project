@@ -22,3 +22,8 @@ Ensure your website is secure by implementing measures like encryption and input
 Write a report documenting your website's features, design choices, and challenges you faced.
 
 Present your website to your class and explain your design and development process.
+
+
+
+Website Info:
+Trading card site where a user can look up prices from Pokémon, Yugioh, baseball, basketball cards etc., and to compare pack prices as well. The website will ask for the user to sign up and create an account for security and will be able to save the users “favorite” card selection so if the user logs back in the card they marked as favorite will appear first.
