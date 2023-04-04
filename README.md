@@ -26,4 +26,4 @@ Present your website to your class and explain your design and development proce
 
 
 Website Info:
-Trading card site where a user can look up prices from Pokémon, Yugioh, baseball, basketball cards etc., and to compare pack prices as well. The website will ask for the user to sign up and create an account for security and will be able to save the users “favorite” card selection so if the user logs back in the card they marked as favorite will appear first.
+Trading card site where a user can look up prices from Pokémon, Yugioh, baseball, basketball cards etc., and to compare pack prices as well. The website will ask for the user to sign up and create an account for security and will be able to save the users “favorite” card selection so if the user logs back in the card/cards they marked as favorite will appear if the user clicks a "Faviorates" tab.
