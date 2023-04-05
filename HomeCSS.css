@@ -10,12 +10,19 @@
 
   .leftCenter{
     position: absolute;
+    background-color: lightskyblue;
+    border: 2px solid black;
     width: 1000px;
     height: 1000px;
     left: 50%;
     top: 40%;
     margin-left: -100px; 
     margin-top: -100px; 
+  }
+  .home-bar a{
+    color: black;
+    padding: 4px;
+    text-decoration: none;
   }
  .imageLogo {
     position: absolute;
