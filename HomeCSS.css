@@ -1,9 +1,19 @@
 .centerTop {
     position: absolute;
-    width: 100px;
+    width: 1000px;
     height: 100px;
     left: 50%;
     top: 20%;
+    margin-left: -100px; 
+    margin-top: -100px; 
+  }
+
+  .leftCenter{
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    left: 50%;
+    top: 40%;
     margin-left: -100px; 
     margin-top: -100px; 
   }
