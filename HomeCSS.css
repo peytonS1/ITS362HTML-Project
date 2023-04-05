@@ -23,6 +23,12 @@
     padding: 4px;
     text-decoration: none;
   }
+
+  .leftCenter a:hover{
+    background-color:violet;
+    color: rgba(11, 114, 139, 0.425);
+  }
+
   .imageLogo {
     position: absolute;
     width: 1000px;
