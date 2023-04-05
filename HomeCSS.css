@@ -2,29 +2,28 @@
     position: absolute;
     width: 1000px;
     height: 100px;
-    left: 50%;
+    left: 49%;
     top: 20%;
     margin-left: -100px; 
     margin-top: -100px; 
   }
 
   .leftCenter{
-    position: absolute;
+    text-align: center;
     background-color: lightskyblue;
     border: 2px solid black;
-    width: 1000px;
-    height: 1000px;
-    left: 50%;
-    top: 40%;
-    margin-left: -100px; 
-    margin-top: -100px; 
+    position: absolute;
+    padding: 5px;
+    top: 60%;
+    left: 34%;
   }
-  .home-bar a{
+
+  .leftCenter a{
     color: black;
     padding: 4px;
     text-decoration: none;
   }
- .imageLogo {
+  .imageLogo {
     position: absolute;
     width: 1000px;
     height: 250px;
