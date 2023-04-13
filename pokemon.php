@@ -39,6 +39,61 @@ if(isset($_POST['Gyarados_EX'])){
 $card3->execute();
 $Gyarados = $card3->fetchAll(PDO::FETCH_ASSOC);
 
+if(isset($_POST['CharizardVstar'])){
+    $card4 = $db->prepare("SELECT * FROM pokemon WHERE cardID = 4");
+} else {
+    $card4 = $db->prepare("SELECT * FROM pokemon WHERE cardID = 4");
+}
+$card4->execute();
+$CharizardVstar = $card4->fetchAll(PDO::FETCH_ASSOC);
+
+if(isset($_POST['Blastois'])){
+    $card5 = $db->prepare("SELECT * FROM pokemon WHERE cardID = 5");
+} else {
+    $card5 = $db->prepare("SELECT * FROM pokemon WHERE cardID = 5");
+}
+$card5->execute();
+$Blastois = $card5->fetchAll(PDO::FETCH_ASSOC);
+
+if(isset($_POST['Pikachu'])){
+    $card6 = $db->prepare("SELECT * FROM pokemon WHERE cardID = 6");
+} else {
+    $card6 = $db->prepare("SELECT * FROM pokemon WHERE cardID = 6");
+}
+$card6->execute();
+$Pikachu = $card6->fetchAll(PDO::FETCH_ASSOC);
+
+if(isset($_POST['Regi'])){
+    $card7 = $db->prepare("SELECT * FROM pokemon WHERE cardID = 7");
+} else {
+    $card7 = $db->prepare("SELECT * FROM pokemon WHERE cardID = 7");
+}
+$card7->execute();
+$Regi = $card7->fetchAll(PDO::FETCH_ASSOC);
+
+if(isset($_POST['CharizardVmax'])){
+    $card8 = $db->prepare("SELECT * FROM pokemon WHERE cardID = 8");
+} else {
+    $card8 = $db->prepare("SELECT * FROM pokemon WHERE cardID = 8");
+}
+$card8->execute();
+$CharizardVmax = $card8->fetchAll(PDO::FETCH_ASSOC);
+
+if(isset($_POST['Houndoom_EX'])){
+    $card9 = $db->prepare("SELECT * FROM pokemon WHERE cardID = 9");
+} else {
+    $card9 = $db->prepare("SELECT * FROM pokemon WHERE cardID = 9");
+}
+$card9->execute();
+$Hound = $card9->fetchAll(PDO::FETCH_ASSOC);
+
+if(isset($_POST['AcreusV'])){
+    $card10 = $db->prepare("SELECT * FROM pokemon WHERE cardID = 10");
+} else {
+    $card10 = $db->prepare("SELECT * FROM pokemon WHERE cardID = 10");
+}
+$card10->execute();
+$Acreus = $card10->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
@@ -74,8 +129,8 @@ $Gyarados = $card3->fetchAll(PDO::FETCH_ASSOC);
             background-color: lightblue;
             border: 2px solid black;
             padding: 5px;
-            margin-left: auto; 
-            margin-right: auto;
+            margin-left: 25%; 
+            margin-right: 25%;
         }
         .leftCenterP a{
             color: black;
@@ -152,6 +207,152 @@ $Gyarados = $card3->fetchAll(PDO::FETCH_ASSOC);
                 <?php foreach ($Gyarados as $tcd): ?>
                 <tr>
                     <td><img src="https://assets.pokemon.com/assets/cms2/img/cards/web/SV01/SV01_EN_45.png" alt="Cards" width= 200px height= 300px></td>
+                    <td><?php echo $tcd['cardName']; ?></td>
+                    <td><?php echo $tcd['cardSet']; ?></td>
+                    <td><?php echo $tcd['description']; ?></td>
+                </tr>
+                <?php endforeach;?>
+            </tbody>
+        </table>
+        <table border=2 style="width:50%" class="center">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Card Name</th>
+                    <th>Card Set</th>
+                    <th style="width:40%">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($CharizardVstar as $tcd): ?>
+                <tr>
+                    <td><img src="https://th.bing.com/th/id/OIP.06mpJMOWI3NgH47PnXUC3AHaKA?pid=ImgDet&rs=1" alt="Cards" width= 200px height= 300px></td>
+                    <td><?php echo $tcd['cardName']; ?></td>
+                    <td><?php echo $tcd['cardSet']; ?></td>
+                    <td><?php echo $tcd['description']; ?></td>
+                </tr>
+                <?php endforeach;?>
+            </tbody>
+        </table>
+
+        <table border=2 style="width:50%" class="center">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Card Name</th>
+                    <th>Card Set</th>
+                    <th style="width:40%">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($Blastois as $tcd): ?>
+                <tr>
+                    <td><img src="https://th.bing.com/th/id/OIP.Gy2B8z2ur3sJNs28FiVkeQHaKL?pid=ImgDet&rs=1" alt="Cards" width= 200px height= 300px></td>
+                    <td><?php echo $tcd['cardName']; ?></td>
+                    <td><?php echo $tcd['cardSet']; ?></td>
+                    <td><?php echo $tcd['description']; ?></td>
+                </tr>
+                <?php endforeach;?>
+            </tbody>
+        </table>
+
+        <table border=2 style="width:50%" class="center">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Card Name</th>
+                    <th>Card Set</th>
+                    <th style="width:40%">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($Pikachu as $tcd): ?>
+                <tr>
+                    <td><img src="https://commondatastorage.googleapis.com/images.pricecharting.com/7d8047b359048d435dca437b6a6cbe916b2f333cba57e4a10da3cb75366a8731/240.jpg" alt="Cards" width= 200px height= 300px></td>
+                    <td><?php echo $tcd['cardName']; ?></td>
+                    <td><?php echo $tcd['cardSet']; ?></td>
+                    <td><?php echo $tcd['description']; ?></td>
+                </tr>
+                <?php endforeach;?>
+            </tbody>
+        </table>
+
+        <table border=2 style="width:50%" class="center">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Card Name</th>
+                    <th>Card Set</th>
+                    <th style="width:40%">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($Regi as $tcd): ?>
+                <tr>
+                    <td><img src="https://th.bing.com/th/id/OIP.A4_mM-x5ZKvGEN9PhNXSgwHaKc?pid=ImgDet&rs=1" alt="Cards" width= 200px height= 300px></td>
+                    <td><?php echo $tcd['cardName']; ?></td>
+                    <td><?php echo $tcd['cardSet']; ?></td>
+                    <td><?php echo $tcd['description']; ?></td>
+                </tr>
+                <?php endforeach;?>
+            </tbody>
+        </table>
+
+        <table border=2 style="width:50%" class="center">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Card Name</th>
+                    <th>Card Set</th>
+                    <th style="width:40%">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($CharizardVmax as $tcd): ?>
+                <tr>
+                    <td><img src="https://i.etsystatic.com/22047591/r/il/1f88a4/3084740589/il_1588xN.3084740589_44rt.jpg" alt="Cards" width= 200px height= 300px></td>
+                    <td><?php echo $tcd['cardName']; ?></td>
+                    <td><?php echo $tcd['cardSet']; ?></td>
+                    <td><?php echo $tcd['description']; ?></td>
+                </tr>
+                <?php endforeach;?>
+            </tbody>
+        </table>
+
+        <table border=2 style="width:50%" class="center">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Card Name</th>
+                    <th>Card Set</th>
+                    <th style="width:40%">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($Hound as $tcd): ?>
+                <tr>
+                    <td><img src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/1080578.jpg" alt="Cards" width= 200px height= 300px></td>
+                    <td><?php echo $tcd['cardName']; ?></td>
+                    <td><?php echo $tcd['cardSet']; ?></td>
+                    <td><?php echo $tcd['description']; ?></td>
+                </tr>
+                <?php endforeach;?>
+            </tbody>
+        </table>
+
+        <table border=2 style="width:50%" class="center">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Card Name</th>
+                    <th>Card Set</th>
+                    <th style="width:40%">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($Acreus as $tcd): ?>
+                <tr>
+                    <td><img src="https://th.bing.com/th/id/OIP.qfp2WdM0P0fdRIahtuvaGgHaKX?pid=ImgDet&rs=1" alt="Cards" width= 200px height= 300px></td>
                     <td><?php echo $tcd['cardName']; ?></td>
                     <td><?php echo $tcd['cardSet']; ?></td>
                     <td><?php echo $tcd['description']; ?></td>
