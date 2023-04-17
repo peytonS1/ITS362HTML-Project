@@ -153,14 +153,6 @@ $Acreus = $card10->fetchAll(PDO::FETCH_ASSOC);
         <a href = "favorites.php" class = "btn btn-info" role = "button">Favorites</a>
     </nav>
         <table border=2 style="width:50%" class="center">
-            <thead>
-                <tr>
-                    <th>Image</th>
-                    <th>Card Name</th>
-                    <th>Card Set</th>
-                    <th style="width:40%">Description</th>
-                </tr>
-            </thead>
             <tbody>
                 <?php foreach ($Mewtwo as $tcd): ?>
                 <tr>
@@ -174,14 +166,6 @@ $Acreus = $card10->fetchAll(PDO::FETCH_ASSOC);
         </table>
 
         <table border=2 style="width:50%" class="center">
-            <thead>
-                <tr>
-                    <th>Image</th>
-                    <th>Card Name</th>
-                    <th>Card Set</th>
-                    <th style="width:40%">Description</th>
-                </tr>
-            </thead>
             <tbody>
                 <?php foreach ($Gardevoir as $tcd): ?>
                 <tr>
@@ -195,14 +179,6 @@ $Acreus = $card10->fetchAll(PDO::FETCH_ASSOC);
         </table>
 
         <table border=2 style="width:50%" class="center">
-            <thead>
-                <tr>
-                    <th>Image</th>
-                    <th>Card Name</th>
-                    <th>Card Set</th>
-                    <th style="width:40%">Description</th>
-                </tr>
-            </thead>
             <tbody>
                 <?php foreach ($Gyarados as $tcd): ?>
                 <tr>
@@ -215,14 +191,6 @@ $Acreus = $card10->fetchAll(PDO::FETCH_ASSOC);
             </tbody>
         </table>
         <table border=2 style="width:50%" class="center">
-            <thead>
-                <tr>
-                    <th>Image</th>
-                    <th>Card Name</th>
-                    <th>Card Set</th>
-                    <th style="width:40%">Description</th>
-                </tr>
-            </thead>
             <tbody>
                 <?php foreach ($CharizardVstar as $tcd): ?>
                 <tr>
@@ -236,14 +204,6 @@ $Acreus = $card10->fetchAll(PDO::FETCH_ASSOC);
         </table>
 
         <table border=2 style="width:50%" class="center">
-            <thead>
-                <tr>
-                    <th>Image</th>
-                    <th>Card Name</th>
-                    <th>Card Set</th>
-                    <th style="width:40%">Description</th>
-                </tr>
-            </thead>
             <tbody>
                 <?php foreach ($Blastois as $tcd): ?>
                 <tr>
@@ -257,14 +217,6 @@ $Acreus = $card10->fetchAll(PDO::FETCH_ASSOC);
         </table>
 
         <table border=2 style="width:50%" class="center">
-            <thead>
-                <tr>
-                    <th>Image</th>
-                    <th>Card Name</th>
-                    <th>Card Set</th>
-                    <th style="width:40%">Description</th>
-                </tr>
-            </thead>
             <tbody>
                 <?php foreach ($Pikachu as $tcd): ?>
                 <tr>
@@ -278,14 +230,6 @@ $Acreus = $card10->fetchAll(PDO::FETCH_ASSOC);
         </table>
 
         <table border=2 style="width:50%" class="center">
-            <thead>
-                <tr>
-                    <th>Image</th>
-                    <th>Card Name</th>
-                    <th>Card Set</th>
-                    <th style="width:40%">Description</th>
-                </tr>
-            </thead>
             <tbody>
                 <?php foreach ($Regi as $tcd): ?>
                 <tr>
@@ -299,14 +243,6 @@ $Acreus = $card10->fetchAll(PDO::FETCH_ASSOC);
         </table>
 
         <table border=2 style="width:50%" class="center">
-            <thead>
-                <tr>
-                    <th>Image</th>
-                    <th>Card Name</th>
-                    <th>Card Set</th>
-                    <th style="width:40%">Description</th>
-                </tr>
-            </thead>
             <tbody>
                 <?php foreach ($CharizardVmax as $tcd): ?>
                 <tr>
@@ -320,14 +256,6 @@ $Acreus = $card10->fetchAll(PDO::FETCH_ASSOC);
         </table>
 
         <table border=2 style="width:50%" class="center">
-            <thead>
-                <tr>
-                    <th>Image</th>
-                    <th>Card Name</th>
-                    <th>Card Set</th>
-                    <th style="width:40%">Description</th>
-                </tr>
-            </thead>
             <tbody>
                 <?php foreach ($Hound as $tcd): ?>
                 <tr>
@@ -341,14 +269,6 @@ $Acreus = $card10->fetchAll(PDO::FETCH_ASSOC);
         </table>
 
         <table border=2 style="width:50%" class="center">
-            <thead>
-                <tr>
-                    <th>Image</th>
-                    <th>Card Name</th>
-                    <th>Card Set</th>
-                    <th style="width:40%">Description</th>
-                </tr>
-            </thead>
             <tbody>
                 <?php foreach ($Acreus as $tcd): ?>
                 <tr>
