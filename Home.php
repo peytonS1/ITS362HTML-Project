@@ -24,6 +24,15 @@ try{
     <title>TCD</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+    .video {
+        position: absolute;
+        left: 49%;
+        top: 85%;
+        margin-left: -230px; 
+        margin-top: -100px; 
+  }
+    </style>
 </head>
 <body style = background-color:rgb(255,196,206)>
     <h2 class="centerTop">Trading Card Direct</h2>
@@ -35,5 +44,7 @@ try{
         <a href = "favorites.php" class = "btn btn-info" role = "button">Favorites</a>
     </nav> 
     <img class="imageLogo" src="https://4.bp.blogspot.com/-QnPOHKoDe9k/UdWkrtlkudI/AAAAAAAAAao/NoTiFsvD1bA/s660/Trading+Pile.jpg" alt="Cards" >
+
+    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/fDnaAPokysg?controls=0" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </body>
 </html>
