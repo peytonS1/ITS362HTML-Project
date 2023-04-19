@@ -143,18 +143,16 @@ $Chuck = $card10->fetchAll(PDO::FETCH_ASSOC);
             color: rgba(11, 114, 139, 0.425);
         }
     </style>
-
 </head>
 <body>
-    <nav class = "leftCenter">
+    <nav class = "leftCenterP">
         <a href = "Home.php" class = "btn btn-info" role = "button">Home</a>
         <a href = "pokemon.php" class = "btn btn-info" role = "button">Pokemon</a>
         <a href = "yugioh.php" class = "btn btn-info" role = "button">Yu-gi-oh</a>
         <a href = "basketball.php" class = "btn btn-info" role = "button">Basketball</a>
         <a href = "favorites.php" class = "btn btn-info" role = "button">Favorites</a>
-    </nav> 
-
-    <table border=2 style="width:50%" class="center">
+        </nav>
+        <table border=2 style="width:50%" class="center">
             <tbody>
                 <?php foreach ($MichaelRook as $tcd): ?>
                 <tr>
@@ -285,9 +283,7 @@ $Chuck = $card10->fetchAll(PDO::FETCH_ASSOC);
 </body>
 <style> 
 body {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Major_League_Baseball_logo.svg/1200px-Major_League_Baseball_logo.svg.png')
-
+    background-image: url('https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/052014/mlb.png?itok=wlvCELtf')
 }
 </style>
-
 </html>
