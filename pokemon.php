@@ -108,15 +108,60 @@ $Acreus = $card10->fetchAll(PDO::FETCH_ASSOC);
     <title>POKEMON</title>
 
     <style>
+
         table {
-        border-collapse: collapse;
+        border-spacing: 0px;
+        border-collapse: separate;
+        border-radius: 10px;
+        
+        overflow: hidden;
+        border-style: hidden;
+        margin: 7px;
+        
         width: 100%;
+        
+        
         }
 
-        th, td {
-        text-align: left;
-        padding: 8px;
-        background-color: #D6EEEE;
+        th {
+            text-align: center;
+            background-color: dodgerblue;
+            border-radius: 10px;
+            border-collapse: separate;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        th: not(: -last-child){
+            border-right: 1px solid black;
+        }
+
+        td, tr {
+        text-align: center;
+        padding: 14px;
+        background-color: violet;
+        font-style: unset;
+        box-shadow: 1px black;
+        border-collapse: separate;
+        border-radius: 10px;
+        border-style: double;
+        border-color: black;
+        border-width: 1px;
+        }
+
+        table tr:first-child th:first-child {
+        border-top-left-radius: 6px;
+        }
+
+        table tr:first-child th:last-child {
+        border-top-right-radius: 6px;
+        }
+
+        table tr:last-child td:first-child {
+        border-bottom-left-radius: 6px;
+        }
+
+        table tr:last-child td:last-child {
+        border-bottom-right-radius: 6px;
         }
 
         table.center {
@@ -131,6 +176,7 @@ $Acreus = $card10->fetchAll(PDO::FETCH_ASSOC);
             padding: 5px;
             margin-left: 25%; 
             margin-right: 25%;
+            border-radius: 10px;
         }
         .leftCenterP a{
             color: black;
@@ -153,6 +199,12 @@ $Acreus = $card10->fetchAll(PDO::FETCH_ASSOC);
         <a href = "favorites.php" class = "btn btn-info" role = "button">Favorites</a>
     </nav>
         <table border=2 style="width:50%" class="center">
+            <thead>
+                <th>Card Art</th>
+                <th>Card Name</th>
+                <th>Card Set</th>
+                <th>Description</th>
+            </thead>
             <tbody>
                 <?php foreach ($Mewtwo as $tcd): ?>
                 <tr>
