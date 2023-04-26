@@ -109,14 +109,29 @@ $Chuck = $card10->fetchAll(PDO::FETCH_ASSOC);
 
     <style>
         table {
-        border-collapse: collapse;
+        border-spacing: 0px;
+        border-collapse: separate;
+        border-style: hidden;
+        margin: 7px;
         width: 100%;
         }
 
-        th, td {
+        th {
+            text-align: center;
+            background-color: darkgrey ;
+            border-radius: 10px;
+            border-collapse: separate;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        th: not(: -last-child){
+            border-right: 1px solid black;
+        }
+
+        td {
         text-align: left;
         padding: 8px;
-        background-color: #D6EEEE;
+        background-color: lightgoldenrodyellow;
         }
 
         table.center {
@@ -154,6 +169,12 @@ $Chuck = $card10->fetchAll(PDO::FETCH_ASSOC);
         <a href = "favorites.php" class = "btn btn-info" role = "button">Favorites</a>
         </nav>
         <table border=2 style="width:50%" class="center">
+            <thead>
+                <th>Card Art</th>
+                <th>Card Name</th>
+                <th>Card Set</th>
+                <th>Description</th>
+            </thead>
             <tbody>
                 <?php foreach ($MichaelRook as $tcd): ?>
                 <tr>
