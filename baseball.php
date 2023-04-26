@@ -131,6 +131,7 @@ $Chuck = $card10->fetchAll(PDO::FETCH_ASSOC);
             padding: 5px;
             margin-left: 25%; 
             margin-right: 25%;
+            border-radius: 10px;
         }
         .leftCenterP a{
             color: black;
