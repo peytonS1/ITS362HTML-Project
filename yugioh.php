@@ -14,83 +14,83 @@ try{
 }
 
 if(isset($_POST['MichaelRookie'])){
-    $card1 = $db->prepare("SELECT * FROM basketball WHERE cardID = 1");
+    $card1 = $db->prepare("SELECT * FROM yugioh WHERE cardID = 1");
 } else {
-    $card1 = $db->prepare("SELECT * FROM basketball WHERE cardID = 1");
+    $card1 = $db->prepare("SELECT * FROM yugioh WHERE cardID = 1");
 }
 $card1->execute();
 $MichaelRook = $card1->fetchAll(PDO::FETCH_ASSOC);
 
 
 if(isset($_POST['ShaqMolten'])){
-    $card2 = $db->prepare("SELECT * FROM basketball WHERE cardID = 2");
+    $card2 = $db->prepare("SELECT * FROM yugioh WHERE cardID = 2");
 } else {
-    $card2 = $db->prepare("SELECT * FROM basketball WHERE cardID = 2");
+    $card2 = $db->prepare("SELECT * FROM yugioh WHERE cardID = 2");
 }
 $card2->execute();
 $ShaqMet = $card2->fetchAll(PDO::FETCH_ASSOC);
 
 
 if(isset($_POST['StephRookie'])){
-    $card3 = $db->prepare("SELECT * FROM basketball WHERE cardID = 3");
+    $card3 = $db->prepare("SELECT * FROM yugioh WHERE cardID = 3");
 } else {
-    $card3 = $db->prepare("SELECT * FROM basketball WHERE cardID = 3");
+    $card3 = $db->prepare("SELECT * FROM yugioh WHERE cardID = 3");
 }
 $card3->execute();
 $StephRook = $card3->fetchAll(PDO::FETCH_ASSOC);
 
 if(isset($_POST['LebronPrizm'])){
-    $card4 = $db->prepare("SELECT * FROM basketball WHERE cardID = 4");
+    $card4 = $db->prepare("SELECT * FROM yugioh WHERE cardID = 4");
 } else {
-    $card4 = $db->prepare("SELECT * FROM basketball WHERE cardID = 4");
+    $card4 = $db->prepare("SELECT * FROM yugioh WHERE cardID = 4");
 }
 $card4->execute();
 $LebronPriz = $card4->fetchAll(PDO::FETCH_ASSOC);
 
 if(isset($_POST['LarryLegend'])){
-    $card5 = $db->prepare("SELECT * FROM basketball WHERE cardID = 5");
+    $card5 = $db->prepare("SELECT * FROM yugioh WHERE cardID = 5");
 } else {
-    $card5 = $db->prepare("SELECT * FROM basketball WHERE cardID = 5");
+    $card5 = $db->prepare("SELECT * FROM yugioh WHERE cardID = 5");
 }
 $card5->execute();
 $LarryLegend = $card5->fetchAll(PDO::FETCH_ASSOC);
 
 if(isset($_POST['Kobe'])){
-    $card6 = $db->prepare("SELECT * FROM basketball WHERE cardID = 6");
+    $card6 = $db->prepare("SELECT * FROM yugioh WHERE cardID = 6");
 } else {
-    $card6 = $db->prepare("SELECT * FROM basketball WHERE cardID = 6");
+    $card6 = $db->prepare("SELECT * FROM yugioh WHERE cardID = 6");
 }
 $card6->execute();
 $Kobe = $card6->fetchAll(PDO::FETCH_ASSOC);
 
 if(isset($_POST['Kevin'])){
-    $card7 = $db->prepare("SELECT * FROM basketball WHERE cardID = 7");
+    $card7 = $db->prepare("SELECT * FROM yugioh WHERE cardID = 7");
 } else {
-    $card7 = $db->prepare("SELECT * FROM basketball WHERE cardID = 7");
+    $card7 = $db->prepare("SELECT * FROM yugioh WHERE cardID = 7");
 }
 $card7->execute();
 $Kevin = $card7->fetchAll(PDO::FETCH_ASSOC);
 
 if(isset($_POST['Giannis'])){
-    $card8 = $db->prepare("SELECT * FROM basketball WHERE cardID = 8");
+    $card8 = $db->prepare("SELECT * FROM yugioh WHERE cardID = 8");
 } else {
-    $card8 = $db->prepare("SELECT * FROM basketball WHERE cardID = 8");
+    $card8 = $db->prepare("SELECT * FROM yugioh WHERE cardID = 8");
 }
 $card8->execute();
 $Giannis = $card8->fetchAll(PDO::FETCH_ASSOC);
 
 if(isset($_POST['Pippen'])){
-    $card9 = $db->prepare("SELECT * FROM basketball WHERE cardID = 9");
+    $card9 = $db->prepare("SELECT * FROM yugioh WHERE cardID = 9");
 } else {
-    $card9 = $db->prepare("SELECT * FROM basketball WHERE cardID = 9");
+    $card9 = $db->prepare("SELECT * FROM yugioh WHERE cardID = 9");
 }
 $card9->execute();
 $Pippen = $card9->fetchAll(PDO::FETCH_ASSOC);
 
 if(isset($_POST['Chuck'])){
-    $card10 = $db->prepare("SELECT * FROM basketball WHERE cardID = 10");
+    $card10 = $db->prepare("SELECT * FROM yugioh WHERE cardID = 10");
 } else {
-    $card10 = $db->prepare("SELECT * FROM basketball WHERE cardID = 10");
+    $card10 = $db->prepare("SELECT * FROM yugioh WHERE cardID = 10");
 }
 $card10->execute();
 $Chuck = $card10->fetchAll(PDO::FETCH_ASSOC);
@@ -169,7 +169,7 @@ $Chuck = $card10->fetchAll(PDO::FETCH_ASSOC);
         <a href = "favorites.php" class = "btn btn-info" role = "button">Favorites</a>
         </nav>
         <table border=2 style="width:50%" class="center">
-            <thead>
+        <thead>
                 <th>Card Art</th>
                 <th>Card Name</th>
                 <th>Card Set</th>
@@ -178,7 +178,7 @@ $Chuck = $card10->fetchAll(PDO::FETCH_ASSOC);
             <tbody>
                 <?php foreach ($MichaelRook as $tcd): ?>
                 <tr>
-                    <td><img src="https://th.bing.com/th/id/OIP.5d5z61YPGvVt4LRICyoC5wHaKa?w=197&h=278&c=7&r=0&o=5&pid=1.7" alt="Cards" width= 200px height= 300px></td>
+                    <td><img src="https://i.pinimg.com/736x/a9/09/e1/a909e1bcdd38044982c9e2614407f8f1--blue-eyes-yu-gi-oh.jpg" alt="Cards" width= 200px height= 300px></td>
                     <td><?php echo $tcd['cardName']; ?></td>
                     <td><?php echo $tcd['cardSet']; ?></td>
                     <td><?php echo $tcd['description']; ?></td>
@@ -191,7 +191,7 @@ $Chuck = $card10->fetchAll(PDO::FETCH_ASSOC);
             <tbody>
                 <?php foreach ($ShaqMet as $tcd): ?>
                 <tr>
-                    <td><img src="https://vintagecardprices.com/pics/5556/675824.jpg" alt="Cards" width= 200px height= 300px></td>
+                    <td><img src="https://th.bing.com/th/id/OIP.ABGLG2x9w4P7FlBEQ9dbzwAAAA?pid=ImgDet&rs=1" alt="Cards" width= 200px height= 300px></td>
                     <td><?php echo $tcd['cardName']; ?></td>
                     <td><?php echo $tcd['cardSet']; ?></td>
                     <td><?php echo $tcd['description']; ?></td>
@@ -204,7 +204,7 @@ $Chuck = $card10->fetchAll(PDO::FETCH_ASSOC);
             <tbody>
                 <?php foreach ($StephRook as $tcd): ?>
                 <tr>
-                    <td><img src="https://th.bing.com/th/id/R.b44fd3475c8d48e275b45e9daf8aa9a9?rik=LhzMVHxvOCikgw&pid=ImgRaw&r=0" alt="Cards" width= 200px height= 300px></td>
+                    <td><img src="https://th.bing.com/th/id/R.145355660eed200f7f53be42fa705ad5?rik=WcgektSHN690jg&riu=http%3a%2f%2fstatic.api3.studiobebop.net%2fygo_data%2fcard_images%2fCrush_Card_Virus.jpg&ehk=1DO0%2fCEkvs5RjNjS19I11l2zdHlbVSPoKoOPBP2hGaE%3d&risl=&pid=ImgRaw&r=0" alt="Cards" width= 200px height= 300px></td>
                     <td><?php echo $tcd['cardName']; ?></td>
                     <td><?php echo $tcd['cardSet']; ?></td>
                     <td><?php echo $tcd['description']; ?></td>
@@ -216,7 +216,7 @@ $Chuck = $card10->fetchAll(PDO::FETCH_ASSOC);
             <tbody>
                 <?php foreach ($LebronPriz as $tcd): ?>
                 <tr>
-                    <td><img src="https://th.bing.com/th/id/OIP.dpikh_gke92iBgCSUboIngHaKb?w=186&h=262&c=7&r=0&o=5&pid=1.7" alt="Cards" width= 200px height= 300px></td>
+                    <td><img src="https://th.bing.com/th/id/R.12e498e40ccb46613e2a4583a83f6269?rik=XX1DeURsegS%2bAg&pid=ImgRaw&r=0" alt="Cards" width= 200px height= 300px></td>
                     <td><?php echo $tcd['cardName']; ?></td>
                     <td><?php echo $tcd['cardSet']; ?></td>
                     <td><?php echo $tcd['description']; ?></td>
@@ -229,7 +229,7 @@ $Chuck = $card10->fetchAll(PDO::FETCH_ASSOC);
             <tbody>
                 <?php foreach ($LarryLegend as $tcd): ?>
                 <tr>
-                    <td><img src="https://img.beckett.com/images/items_stock/185226/8975304/8975330/front.jpg" alt="Cards" width= 200px height= 300px></td>
+                    <td><img src="https://th.bing.com/th/id/OIP.rCmRnJfWCdx5Pv6O5oB6ewHaKv?pid=ImgDet&rs=1" alt="Cards" width= 200px height= 300px></td>
                     <td><?php echo $tcd['cardName']; ?></td>
                     <td><?php echo $tcd['cardSet']; ?></td>
                     <td><?php echo $tcd['description']; ?></td>
@@ -242,7 +242,7 @@ $Chuck = $card10->fetchAll(PDO::FETCH_ASSOC);
             <tbody>
                 <?php foreach ($Kobe as $tcd): ?>
                 <tr>
-                    <td><img src="https://i.ebayimg.com/images/g/Yo8AAOSwUN1gGdl8/s-l1600.jpg" alt="Cards" width= 200px height= 300px></td>
+                    <td><img src="https://th.bing.com/th/id/R.686fac4b5c2bc47e6288fd15a39cdd9f?rik=O57MEzWujeYtBQ&riu=http%3a%2f%2ffc09.deviantart.net%2ffs71%2ff%2f2013%2f139%2f8%2f2%2flegendary_magician_of_dark_by_cardprince-d65umyz.png&ehk=4SM0vgKoo5goTeL4m69DmboOulDPoR6BCTld4P%2fDvCg%3d&risl=&pid=ImgRaw&r=0" alt="Cards" width= 200px height= 300px></td>
                     <td><?php echo $tcd['cardName']; ?></td>
                     <td><?php echo $tcd['cardSet']; ?></td>
                     <td><?php echo $tcd['description']; ?></td>
@@ -255,7 +255,7 @@ $Chuck = $card10->fetchAll(PDO::FETCH_ASSOC);
             <tbody>
                 <?php foreach ($Kevin as $tcd): ?>
                 <tr>
-                    <td><img src="https://i.ebayimg.com/images/g/iZAAAOSwqv9gYOQm/s-l1600.jpg" alt="Cards" width= 200px height= 300px></td>
+                    <td><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7d561851-7e3e-4fb3-8ec5-ce509369737d/d65unyf-2047c42e-db87-4938-97af-3bc7c0efa2a1.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvN2Q1NjE4NTEtN2UzZS00ZmIzLThlYzUtY2U1MDkzNjk3MzdkXC9kNjV1bnlmLTIwNDdjNDJlLWRiODctNDkzOC05N2FmLTNiYzdjMGVmYTJhMS5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.IHHX-nhcxclBKx5WAMSsg0YyyYP4rITVliNwNOghyLI" alt="Cards" width= 200px height= 300px></td>
                     <td><?php echo $tcd['cardName']; ?></td>
                     <td><?php echo $tcd['cardSet']; ?></td>
                     <td><?php echo $tcd['description']; ?></td>
@@ -268,7 +268,7 @@ $Chuck = $card10->fetchAll(PDO::FETCH_ASSOC);
             <tbody>
                 <?php foreach ($Giannis as $tcd): ?>
                 <tr>
-                    <td><img src="https://th.bing.com/th/id/OIP.VXdJeIl-Teh7lTj03obDZgHaKW?w=193&h=270&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Cards" width= 200px height= 300px></td>
+                    <td><img src="https://th.bing.com/th/id/OIP.FQUTyuWOU7r65Z0_lTXiJQHaKm?pid=ImgDet&rs=1" alt="Cards" width= 200px height= 300px></td>
                     <td><?php echo $tcd['cardName']; ?></td>
                     <td><?php echo $tcd['cardSet']; ?></td>
                     <td><?php echo $tcd['description']; ?></td>
@@ -281,7 +281,7 @@ $Chuck = $card10->fetchAll(PDO::FETCH_ASSOC);
             <tbody>
                 <?php foreach ($Pippen as $tcd): ?>
                 <tr>
-                    <td><img src="https://i.ebayimg.com/images/g/zpsAAOSwryBgOxtt/s-l400.jpg" alt="Cards" width= 200px height= 300px></td>
+                    <td><img src="https://th.bing.com/th/id/R.94ef7974a8af4cfca59253421313f42e?rik=KFPeS62F5J%2fpvA&riu=http%3a%2f%2fstatic.api2.studiobebop.net%2fygo_data%2fcard_images%2fStardust_Divinity.jpg&ehk=4DdkIPUvOg1YJqVp8R1dCb5wpmi5t0oaa2D88t2nNgI%3d&risl=&pid=ImgRaw&r=0" alt="Cards" width= 200px height= 300px></td>
                     <td><?php echo $tcd['cardName']; ?></td>
                     <td><?php echo $tcd['cardSet']; ?></td>
                     <td><?php echo $tcd['description']; ?></td>
@@ -294,7 +294,7 @@ $Chuck = $card10->fetchAll(PDO::FETCH_ASSOC);
             <tbody>
                 <?php foreach ($Chuck as $tcd): ?>
                 <tr>
-                    <td><img src="https://i.pinimg.com/originals/8a/1b/28/8a1b2849576953d00024720a8beb60d2.gif" alt="Cards" width= 200px height= 300px></td>
+                    <td><img src="https://th.bing.com/th/id/OIP._KhZAEEUC3BdvpUvbJtaqQHaK1?pid=ImgDet&rs=1" alt="Cards" width= 200px height= 300px></td>
                     <td><?php echo $tcd['cardName']; ?></td>
                     <td><?php echo $tcd['cardSet']; ?></td>
                     <td><?php echo $tcd['description']; ?></td>
