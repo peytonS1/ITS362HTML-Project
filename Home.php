@@ -46,5 +46,10 @@ try{
     <img class="imageLogo" src="https://4.bp.blogspot.com/-QnPOHKoDe9k/UdWkrtlkudI/AAAAAAAAAao/NoTiFsvD1bA/s660/Trading+Pile.jpg" alt="Cards" >
 
     <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/fDnaAPokysg" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    <form method="POST" action="SignUp.php">
+        <button name="subject" type="submit">Sign Up Here</button>
+    </form>
+
 </body>
 </html>
