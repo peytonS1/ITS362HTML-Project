@@ -166,7 +166,7 @@ $Chuck = $card10->fetchAll(PDO::FETCH_ASSOC);
         <a href = "pokemon.php" class = "btn btn-info" role = "button">Pokemon</a>
         <a href = "yugioh.php" class = "btn btn-info" role = "button">Yu-gi-oh</a>
         <a href = "basketball.php" class = "btn btn-info" role = "button">Basketball</a>
-        <a href = "favorites.php" class = "btn btn-info" role = "button">Favorites</a>
+        <a href = "favorites.php" class = "btn btn-info" role = "button">hello</a>
         </nav>
         <table border=2 style="width:50%" class="center">
         <thead>
