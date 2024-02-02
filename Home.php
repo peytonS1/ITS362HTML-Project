@@ -53,7 +53,7 @@ try{
     </style>
 </head>
 <body style = background-color:rgb(255,196,206)>
-    <h2 class="centerTop">Trading Card Direct</h2>
+    <h2 class="centerTop">did it work?</h2>
     <nav class = "leftCenter">
         <a href = "pokemon.php" class = "btn btn-info" role = "button">Pokemon</a>
         <a href = "yugioh.php" class = "btn btn-info" role = "button">Yu-gi-oh</a>
